@@ -1,53 +1,35 @@
-//Utility Logic
-function beepBoop(element) {
-
-}
+//Utility Logic//
 
 
 
 
 //Business Logic
-  let ourArray = [];
-  for (let i = 0; i < 5; i++) {
-    ourArray.push(i); }
+function beepBoop(number1) {
+  let array = [];
+  let result = [];
 
 
+    for (let index = 0; index <= parseInt(number1); index += 1) {
+    result.push(index);
 
-
-//function beepBoop(number) {
-    //let number = 5
-    //let numberArray = [];
-    //for (let index = 0; index <= parseInt(number).length ; index +=1) {
-      //numberArray.push(index);
-    
-  
+    if (result.includes(1)) {
+      return array + "Beep!"
+    }
+  }
+  return result;
+  }
 
   
   
-  
-  //const number = [5]
-    //const outputArray = []
-    //const outputArray = number.toString().split("");
-   //for (let index =0; index <number.length; index +=1); {
-     //outputArray.push(number);
-   //}
-  ;
-  //number.forEach(function(number) {
-    //outputArray.push(element)
-  
-  
-  
-  
-  
-  //for (let index=0; index < number.length; index +=1 ) {
-    //outputArray.parseInt()(number);
-  
-    
-  
-
-
-
-
 
 
 //UI Logic//
+$(document).ready(function(){
+  console.log(beepBoop(number1));
+  $("form#counter").submit(function(event){
+    event.preventDefault();
+    const input1 = $("#number1").val ();
+    const result = beepBoop(input1);
+    $("#Output").html(result + "");
+  });
+});
