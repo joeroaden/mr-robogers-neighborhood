@@ -15,6 +15,10 @@ function beepBoop(number1) {
     if (result.includes(1)) {
       return array + "Beep!"
     }
+
+    //if (result.includes(2)) {
+      //return array +
+    //}
   }
   return result;
   }
@@ -30,6 +34,9 @@ $(document).ready(function(){
     event.preventDefault();
     const input1 = $("#number1").val ();
     const result = beepBoop(input1);
-    $("#Output").html(result + "");
+    $("#output").html(result + "");
+    $("#output").click(function() {
+      $(this).remove();
+    });
   });
 });
