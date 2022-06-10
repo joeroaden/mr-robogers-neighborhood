@@ -7,6 +7,9 @@
 function beepBoop(number1) {
   let array = [];
   let result = [];
+  let beep = [1];
+  let boop = [2];
+  let wontYou = [3];
 
 
     for (let index = 0; index <= parseInt(number1); index += 1) {
@@ -20,7 +23,7 @@ function beepBoop(number1) {
       //return array +
     //}
   }
-  return result;
+  return result
   }
 
   
