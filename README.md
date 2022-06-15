@@ -72,11 +72,11 @@ Copyright (c) June 10th, 2022 Joe Roaden
 
 _Tests_
 
-Describe: beepBoop()
+_Describe: beepBoop()_
 
-Test: "It should return an array of numbers from 0 to the user's inputted number"
-Code: beepBoop(5);
-Expected Output: [0, 1, 2, 3, 4, 5]
+_Test: "It should return an array of numbers from 0 to the user's inputted number"_
+_Code: beepBoop(5);_
+_Expected Output: [0, 1, 2, 3, 4, 5]_
 
 Test: "It should return an array of numbers from 0 to the user's inputted number and replace all 1's with "Beep!""
 Code: beepBoop(5);

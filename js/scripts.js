@@ -12,7 +12,7 @@ function beepBoop(number1) {
   let wontYou = [3];
 
 
-    for (let index = 0; index <= parseInt(number1); index += 1) {
+    for (let index = 0; index <= number1 ; index += 1) {
     result.push(index);
 
     if (result.includes(1)) {
