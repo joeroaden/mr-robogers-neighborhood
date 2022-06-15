@@ -1,39 +1,30 @@
 //Utility Logic//
-
+let beep = "beep!"
+let boop = "boop!"
+let wontYou = "Won't you be my neighbor?"
 
 
 
 //Business Logic
-function beepBoop(number1) {
+let beepBoop = function(number1) {
   let array = [];
-  let result = [];
-  let beep = [1];
-  let boop = [2];
-  let wontYou = [3];
-
-
-    for (let index = 0; index <= number1 ; index += 1) {
-    result.push(index);
-
-    if (result.includes(1)) {
-      return array + "Beep!"
-    }
-
-    //if (result.includes(2)) {
-      //return array +
+  for (let i = 0; i <= number1; i++) {
+      array.push(i.toString());
+  };
+}
+return array
+    
+    //return beepBoop;
+    //if (array[i] == 1 {
+          //array + "Beep!"
     //}
-  }
-  return result
-  }
 
+    
   
-  
-
 
 //UI Logic//
-$(document).ready(function(){
-  console.log(beepBoop(number1));
-  $("form#counter").submit(function(event){
+  $(document).ready(function(){
+    $("form#counter").submit(function(event){
     event.preventDefault();
     const input1 = $("#number1").val ();
     const result = beepBoop(input1);
@@ -42,4 +33,3 @@ $(document).ready(function(){
       $(this).remove();
     });
   });
-});
