@@ -6,14 +6,13 @@ let wontYou = "Won't you be my neighbor?"
 
 
 //Business Logic
- function beepBoop(number1) {
-  let array = "";
-  let result = [];
-  for (let i = 0; i <= number1; i+=1) {
-    
+ let beepBoop = function(input) {
+  let results = [];
+  for (let i = 0; i <= input; i++) {
+    results.push(i);
   };
 }
-//return result;
+ 
 
     
    
@@ -23,10 +22,8 @@ let wontYou = "Won't you be my neighbor?"
   $(document).ready(function(){
     $("form#counter").submit(function(event) {
     event.preventDefault();
-    const input1 = $("#number1").val();
+    const input1 = parseInt($("#number1").val());
     const result = beepBoop(input1);
-    $("#output").html(result + "");
-   
+    $("#output").html(result);
     });
   });
-
