@@ -1,7 +1,5 @@
 //Utility Logic//
-let beep = "beep!"
-let boop = "boop!"
-let wontYou = "Won't you be my neighbor?"
+
 
 
 
@@ -9,8 +7,9 @@ let wontYou = "Won't you be my neighbor?"
  let beepBoop = function(input) {
   let results = [];
   for (let i = 0; i <= input; i++) {
-    results.push(i);
+    results.push(i.toString());
   };
+  return results;
 }
  
 
@@ -24,6 +23,6 @@ let wontYou = "Won't you be my neighbor?"
     event.preventDefault();
     const input1 = parseInt($("#number1").val());
     const result = beepBoop(input1);
-    $("#output").html(result);
+    $("#output").text(result);
     });
   });
