@@ -13,8 +13,12 @@
 
  
 let beepBoopBeep = results.map(function(number) {
-  let beep = "Beep!"
-  if (number.includes("1")) {
+  let beep = "Beep!";
+  let boop = "Boop!";
+  if (number.includes("2")) {
+    return number = boop;
+  }
+  else if (number.includes("1")) {
     return number = beep;
   } else {
     return number;
