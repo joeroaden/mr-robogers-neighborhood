@@ -96,6 +96,10 @@ Describe: beepBoopBeep()
   Code: beepBoopBeep(13);
   Expected Output: [0,Beep!,Boop!,Won't you be my neighbor?,4,5,6,7,8,9,Beep!,Beep!,Boop!,Won't you be my neighbor?]
 
-  Test: "The number 12 should be replaced with ""Boop!" per Hierarchy of Substitutions
+  Test: "The number 12 should be replaced with "Boop!" per Hierarchy of Substitutions
   Code: beepBoopBeep(12);
   Expected Output: [0,Beep!,Boop!,Won't you be my neighbor?,4,5,6,7,8,9,Beep!,Beep!,Boop!]
+
+  Test: "The number 23 should be replaced with "Won't you be my neighbor?" per Hierarchy of Substitutions
+  Code: beepBoopBeep(23);
+  Expected Output: [0,Beep!,Boop!,Won't you be my neighbor?,4,5,6,7,8,9,Beep!,Beep!,Boop!,Won't you be my neighbor?,Beep!,Beep!,Beep!,Beep!,Beep!,Beep!,Boop!,Boop!,Boop!,Won't you be my neighbor?]
