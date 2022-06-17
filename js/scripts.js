@@ -6,15 +6,15 @@ function beepBoop(input) {
   }
 
   let beepBoopBeep = results.map(function (array) {
-    let beep = "Beep!";
-    let boop = "Boop!";
-    let neighbor = "Won't you be my neighbor?";
+    let one = "Beep!";
+    let two = "Boop!";
+    let three = "Won't you be my neighbor?";
     if (array.includes("3")) {
-      return (array = neighbor);
+      return (array = three);
     } else if (array.includes("2")) {
-      return (array = boop);
+      return (array = two);
     } else if (array.includes("1")) {
-      return (array = beep);
+      return (array = one);
     } else {
       return array;
     }
