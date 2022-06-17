@@ -84,7 +84,7 @@ Describe: beepBoopBeep()
   Code: beepBoop(5);
   Expected Output: [0, "Beep!", 2, 3, 4, 5]
 
-  Test: "It should return an array of numbers from 0 to the user's inputted number and replace all 2's with "Boop!"
+  Test: It should return an array of numbers from 0 to the user's inputted number and replace all 2's with "Boop!
   Code: beepBoop(5);
   Expected Output: [0, "Beep!", "Boop", 3, 4, 5]
 
@@ -92,22 +92,22 @@ Describe: beepBoopBeep()
   Code: beepBoop(5);
   Expected Output: [0, "Beep!", "Boop", "Won't you be my neighbor?", 4, 5]
 
-  Test: "The number 13 should be replaced with "Won't you be my neighbor?" per Hierarchy of Substitutions
+  Test: The number 13 should be replaced with "Won't you be my neighbor?" per Hierarchy of Substitutions
   Code: beepBoop(13);
   Expected Output: [0,Beep!,Boop!,Won't you be my neighbor?,4,5,6,7,8,9,Beep!,Beep!,Boop!,Won't you be my neighbor?]
 
-  Test: "The number 12 should be replaced with "Boop!" per Hierarchy of Substitutions
+  Test: The number 12 should be replaced with "Boop!" per Hierarchy of Substitutions
   Code: beepBoop(12);
   Expected Output: [0,Beep!,Boop!,Won't you be my neighbor?,4,5,6,7,8,9,Beep!,Beep!,Boop!]
 
-  Test: "The number 23 should be replaced with "Won't you be my neighbor?" per Hierarchy of Substitutions and overiding 2
+  Test: The number 23 should be replaced with "Won't you be my neighbor?" per Hierarchy of Substitutions and overiding 2
   Code: beepBoop(23);
   Expected Output: [0,Beep!,Boop!,Won't you be my neighbor?,4,5,6,7,8,9,Beep!,Beep!,Boop!,Won't you be my neighbor?,Beep!,Beep!,Beep!,Beep!,Beep!,Beep!,Boop!,Boop!,Boop!,Won't you be my neighbor?]
 
-  Test: "The number 21 should be replaced with "Boop!" per Hierarchy of Substitutions overiding 1
+  Test: The number 21 should be replaced with "Boop!" per Hierarchy of Substitutions overiding 1
   Code: beepBoop(21);
   Expected Output: [0,Beep!,Boop!,Won't you be my neighbor?,4,5,6,7,8,9,Beep!,Beep!,Boop!,Won't you be my neighbor?,Beep!,Beep!,Beep!,Beep!,Beep!,Beep!,Boop!,Boop!]
 
-  Test: "The number 32 should be replaced with "Won't you be my neighbor?" per Hierarchy of Substitutions overiding 2
+  Test: The number 32 should be replaced with "Won't you be my neighbor?" per Hierarchy of Substitutions overiding 2
   Code: beepBoop(32);
   Expected Output: [0,Beep!,Boop!,Won't you be my neighbor?,4,5,6,7,8,9,Beep!,Beep!,Boop!,Won't you be my neighbor?,Beep!,Beep!,Beep!,Beep!,Beep!,Beep!,Boop!,Boop!,Boop!,Won't you be my neighbor?,Boop!,Boop!,Boop!,Boop!,Boop!,Boop!,Won't you be my neighbor?,Won't you be my neighbor?,Won't you be my neighbor?]
