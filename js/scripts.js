@@ -9,9 +9,19 @@
   for (let i = 0; i <= input; i++) {
     results.push(i.toString());
   };
-  return results;
-}
+
+
  
+let beepBoopBeep = results.map(function(number) {
+  let beep = "Beep!"
+  if (number.includes("1")) {
+    return number = beep;
+  } else {
+    return number;
+  };
+});
+  return beepBoopBeep;
+ };
 
     
    
