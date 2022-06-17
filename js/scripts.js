@@ -36,3 +36,5 @@ let beepBoopBeep = results.map(function(number) {
     $("#output").text(result);
     });
   });
+
+  //$("input#new-home-address").val("");//  to reset after click
