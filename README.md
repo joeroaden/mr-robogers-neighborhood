@@ -80,8 +80,12 @@ _Expected Output: [0, 1, 2, 3, 4, 5]_
 
 Test: "It should return an array of numbers from 0 to the user's inputted number and replace all 1's with "Beep!""
 Code: beepBoop(5);
-Expected Output: [0,"Beep!, 2, 3, 4, 5]
+Expected Output: [0, "Beep!", 2, 3, 4, 5]
 
 Test: "It should return an array of numbers from 0 to the user's inputted number and replace all 2's with "Boop!""
 Code: beepBoop(5);
-Expected Output: [0,"Boop!, 2, 3, 4, 5]
+Expected Output: [0, "Beep!", "Boop", 3, 4, 5]
+
+Test: "It should return an array of numbers from 0 to the user's inputted number and replace all 3's with "Won't you be my neighbor?"
+Code: beepBoop(5);
+Expected Output: [0, "Beep!", "Boop", "Won't you be my neighbor?", 4, 5]
